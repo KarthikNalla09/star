@@ -74,6 +74,12 @@ https://github.com/GoogleCloudPlatform/deploymentmanager-samples/blob/master/exa
 https://cloud.google.com/monitoring/quickstart-lamp
 
 
+<<<<<<< HEAD
 #I am Karthik.
 
 
+=======
+I am Karthik.
+
+I am from Visakhapatnam.
+>>>>>>> 15cac9fe2770528b0808425d80defd3984e95c40
