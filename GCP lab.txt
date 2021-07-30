@@ -1,0 +1,77 @@
+
+Lab of VM instance creation for CLI
+
+us-central1-a
+
+gcloud compute zones list | grep us-central1
+
+gcloud config set compute/zone us-central1-c
+
+gcloud compute instances create "my-vm-2" \
+
+sudo apt-get install nginx-light -y
+
+sudo nano /var/www/html/index.nginx-debian.html
+
+===================================================================
+create VM Instance - bloghost
+
+start  up script:
+
+apt-get update
+apt-get install apache2 php php-mysql -y
+service apache2 restart
+
+internla IP: 10.128.0.2
+External IP: 34.69.47.18
+
+-----
+Create bucket using cloud shell
+
+
+export LOCATION=US
+
+gsutil mb -l $LOCATION gs://$DEVSHELL_PROJECT_ID
+
+gsutil mb -l US gs://$DEVSHELL_PROJECT_ID  -- creation using Poroject ID
+
+copy from other location 
+gsutil cp gs://cloud-training/gcpfci/my-excellent-blog.png my-excellent-blog.png
+
+copy to existing bucket 
+
+gsutil cp my-excellent-blog.png gs://$DEVSHELL_PROJECT_ID/my-excellent-blog.png
+
+to make the created object readable
+gsutil acl ch -u allUsers:R gs://$DEVSHELL_PROJECT_ID/my-excellent-blog.png
+
+-----------------
+create SQL database
+
+Instance ID: blog-db
+pwd:karthik
+
+Publi SQL IP: 35.239.4.133
+
+blogdbuser, karthiknalla
+
+copy VM External IP address, go to SQL authorization , new netwrok, web front eend, name, IP followed by/32
+
+go to VM and use those databse instance that we set up 
+
+Login through SSH
+
+cd /var/www/html
+
+sudo nano index.php
+
+34.69.47.18/index.php
+
+https://storage.googleapis.com/qwiklabs-gcp-01-faf94f87a185/my-excellent-blog.png
+
+https://github.com/GoogleCloudPlatform/deploymentmanager-samples/blob/master/examples/v2/quick_start/vm.yaml
+
+https://cloud.google.com/monitoring/quickstart-lamp
+
+
+
